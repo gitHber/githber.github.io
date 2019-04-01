@@ -5,24 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>月肃生的主页</title>
-    <style>
-      body{
-        padding: 0;
-        margin: 0;
-      }
-      #container {
-        height: 100vh;
-        width: 100vw;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <script src="./index.js"></script>
   </head>
   <body>
-    <div id="container"></div>
-    <script>
-      (function() {
-        var no = Math.floor(Math.random()*31)
-        document.getElementById('container').style.backgroundImage = `url(https://raw.githubusercontent.com/gitHber/githber.github.io/master/images/30wallpaper/bg-cover${no}.jpg)`
-      })()
-    </script>
+    <canvas id="paint"></canvas>
+    <div id="container">
+      <div class="text">
+        <span class="text1">捕<span class="text-life">精彩</span></span>
+        <span class="text2">捉<span class="text-slug">美好的事物</span></span>
+        <span class="text3">生活不止眼前的苟且，还有诗和远方</span>
+      </div>
+      <div class="about">
+        <a class="btn" href="https://blog.likun.fun">博客</a>
+        <div class="dropdown">
+          <button class="btn drop-btn">
+            工具
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item btn" href="https://mock.likun.fun">Yapi</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="btn drop-btn">
+            更多
+          </button>
+          <div class="dropdown-menu">
+            <a
+              class="dropdown-item btn"
+              href="https://www.jianshu.com/u/dbebfffb18ba"
+              >简书</a
+            > 
+            <a class="dropdown-item btn" href="https://github.com/gitHber">github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">@月肃生&个人主页</div>
+    <script src="./dot-line.js"></script>
   </body>
 </html>
