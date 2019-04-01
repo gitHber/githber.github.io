@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>月肃生的主页</title>
+    <style>
+      body{
+        padding: 0;
+        margin: 0;
+      }
+      #container {
+        height: 100vh;
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script>
+      (function() {
+        var no = Math.floor(Math.random()*31)
+        document.getElementById('container').style.backgroundImage = `url(https://raw.githubusercontent.com/gitHber/githber.github.io/master/images/30wallpaper/bg-cover${no}.jpg)`
+      })()
+    </script>
+  </body>
+</html>
