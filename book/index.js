@@ -33,6 +33,11 @@ const BOOKS = [
     pdf: "./7.pdf",
     img: "./7.png",
     name: "你不知道的JavaScript(下)"
+  },
+  {
+    pdf: "./8.pdf",
+    img: "./8.png",
+    name: "类型和程序设计语言"
   }
 ];
 const wrap = document.getElementById("wrap");
