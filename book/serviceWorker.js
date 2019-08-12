@@ -4,8 +4,7 @@ var cacheList = [
   "index.html",
   "index.js",
   "index.css",
-  "favicon.ico",
-  "imgs/"
+  "favicon.ico"
 ];
 // 安装
 self.addEventListener("install", e => {

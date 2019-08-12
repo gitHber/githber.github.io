@@ -6,7 +6,6 @@ var cacheList = [
   "index.css",
   "dot-line.js",
   "favicon.ico",
-  "images/",
   "/book/index.html",
   "/book/index.js",
   "/book/index.css"
