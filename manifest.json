@@ -1,0 +1,16 @@
+{
+  "name": "likun blog",
+  "short_name": "lk",
+  "description": "likun blog home page",
+  "display": "standalone",
+  "start_url": "/index.html",
+  "theme_color": "#8888ff",
+  "background": "#aaaaff",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "32x32",
+      "type": "image/ico"
+    }
+  ]
+}

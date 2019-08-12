@@ -10,9 +10,29 @@
   <body>
     <div class="search-wrap">
       <img class="search-icon" src="./imgs/search.png" alt="none" />
-      <input id="search-input" class="search-input" autocomplete="off" placeholder="请输入关键字" />
+      <input
+        id="search-input"
+        class="search-input"
+        autocomplete="off"
+        placeholder="请输入关键字"
+      />
     </div>
     <div id="wrap" class="wrap"></div>
     <script src="./index.js"></script>
+    <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker
+          .register("serviceWorker.js")
+          .then(function(registration) {
+            console.log(
+              "ServiceWorker registered events at scope: ",
+              registration.scope
+            );
+          })
+          .catch(err => {
+            console.log("ServiceWorker registration failed", err);
+          });
+      }
+    </script>
   </body>
 </html>

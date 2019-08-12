@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="/manifest.json" />
     <title>月肃生的主页</title>
     <link rel="stylesheet" type="text/css" href="./index.css" />
     <script src="./index.js"></script>
@@ -27,18 +28,35 @@
             <a class="dropdown-item btn" href="./book">书籍</a>
           </div>
         </div> -->
-        <a class="btn" href="https://likun.fun/book">书籍</a>
-        <a class="btn" href="https://likun.fun/movie">电影</a>
+        <a class="btn" href="./book">书籍</a>
+        <a class="btn" href="./movie">电影</a>
       </div>
     </div>
     <div class="bottom">
       <div class="link">
-          <a href="https://www.jianshu.com/u/dbebfffb18ba" style="color:#ea6f5a">简书</a>
-          <a href="https://github.com/gitHber" style="color:#2d8eef">GitHub</a>
-          <a href="https://mock.likun.fun/" style="color:#1bb247">Yapi</a>
+        <a href="https://www.jianshu.com/u/dbebfffb18ba" style="color:#ea6f5a"
+          >简书</a
+        >
+        <a href="https://github.com/gitHber" style="color:#2d8eef">GitHub</a>
+        <a href="https://mock.likun.fun/" style="color:#1bb247">Yapi</a>
       </div>
       <div>@月肃生&个人主页</div>
     </div>
     <script src="./dot-line.js"></script>
+    <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker
+          .register("serviceWorker.js")
+          .then(function(registration) {
+            console.log(
+              "ServiceWorker registered events at scope: ",
+              registration.scope
+            );
+          })
+          .catch(err => {
+            console.log("ServiceWorker registration failed", err);
+          });
+      }
+    </script>
   </body>
 </html>
