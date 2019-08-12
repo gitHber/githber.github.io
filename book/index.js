@@ -38,7 +38,12 @@ const BOOKS = [
     pdf: "./8.pdf",
     img: "./8.png",
     name: "类型和程序设计语言"
-  }
+  },
+  {
+    pdf: "./9.pdf",
+    img: "./9.png",
+    name: "CSS揭秘"
+  },
 ];
 const wrap = document.getElementById("wrap");
 // 渲染页面
