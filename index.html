@@ -1,48 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
     <link rel="manifest" href="/manifest.json" />
-    <title>月肃生的主页</title>
-    <link rel="stylesheet" type="text/css" href="./index.css" />
-    <script src="./index.js"></script>
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" href="icon/300.png" />
+    <meta name="msapplication-TileImage" content="icon/300.png" />
+    <link rel="shortcut icon" href="icon/32.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="full-screen" content="yes" />
+    <!--UC强制全屏-->
+    <meta name="browsermode" content="application" />
+    <!--UC应用模式-->
+    <meta name="x5-fullscreen" content="true" />
+    <!--QQ强制全屏-->
+    <meta name="x5-page-mode" content="app" />
+    <!--QQ应用模式-->
+    <title>月肃生</title>
+    <link href="index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/font.css" />
+    <!-- <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="/jquery3.4.1.min.js"></script>
+    <script src="index.js"></script>
   </head>
+
   <body>
-    <canvas id="paint"></canvas>
-    <div id="container">
-      <div class="text">
-        <span class="text1">捕<span class="text-life">精彩</span></span>
-        <span class="text2">捉<span class="text-slug">美好的事物</span></span>
-        <span class="text3">生活不止眼前的苟且，还有诗和远方</span>
+    <div id="menu"><i></i></div>
+    <div class="list closed">
+      <ul>
+        <!------>
+        <li class="title"><i class="iconfont icon-youxiang"></i> 邮箱</li>
+        <li>
+          <a rel="nofollow" href="https://mail.163.com/" target="_blank"
+            ><i class="iconfont icon-wangyi" style="color: #169;"></i
+            >网易邮箱</a
+          >
+        </li>
+        <li>
+          <a rel="nofollow" href="https://mail.qq.com/" target="_blank"
+            ><i class="iconfont icon-QQ" style="color: #f05;"></i>QQ邮箱</a
+          >
+        </li>
+        <!------>
+        <li class="title"><i class="iconfont icon-msg"></i> 常用网站</li>
+        <li>
+          <a rel="nofollow" href="https://www.bilibili.com/" target="_blank"
+            ><i class="iconfont icon-bili" style="color:#09e;"></i>哔哩哔哩</a
+          >
+        </li>
+        <li>
+          <a rel="nofollow" href="./oldHome" target="_blank"
+            ><i class="iconfont icon-dribbble" style="color:#09e;"></i>原主页</a
+          >
+        </li>
+        <li>
+          <a rel="nofollow" href="https://www.zhihu.com/" target="_blank"
+            ><i class="iconfont icon-zhihu" style="color: #0084ff;"></i>知乎</a
+          >
+        </li>
+        <li>
+          <a rel="nofollow" href="https://www.facebook.com" target="_blank"
+            ><i class="iconfont icon-facebook" style="color: #4267b2;"></i
+            >Facebook</a
+          >
+        </li>
+        <!------>
+        <li class="title"><i class="iconfont icon-shipin"></i> 音影娱乐</li>
+        <li>
+          <a rel="nofollow" href="http://ifkdy.com/" target="_blank"
+            ><i class="iconfont icon-yunbo" style="color:#0bf;"></i>影视搜索</a
+          >
+        </li>
+        <li>
+          <a rel="nofollow" href="http://www.echangwang.com" target="_blank"
+            ><i class="iconfont icon-yinle" style="color:#e85d08;"></i>易唱谱</a
+          >
+        </li>
+        <li>
+          <a rel="nofollow" href="http://www.jitaba.cn" target="_blank"
+            ><i class="iconfont icon-yinle" style="color:#0dc078;"></i>吉他吧</a
+          >
+        </li>
+        <!------>
+        <!------>
+        <li class="title"><i class="iconfont icon-ai-tool"></i> 工具</li>
+        <li>
+          <a rel="nofollow" href="http://likun.fun:8888/" target="_blank"
+            ><i class="iconfont icon-wangluo" style="color: #02f;"></i>宝塔</a
+          >
+        </li>
+        <!------>
+        <li class="title"><i class="iconfont icon-kongzhitai"></i> 开发</li>
+        <li>
+          <a rel="nofollow" href="https://github.com/gitHber" target="_blank"
+            ><i class="iconfont icon-github"></i>Github</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="mywth">
+      <div class="wea_hover">
+        <div class="wea_in wea_top"></div>
+        <div class="wea_in wea_con">
+          <ul></ul>
+        </div>
+        <div class="wea_in wea_foot">
+          <ul></ul>
+        </div>
       </div>
-      <div class="about">
-        <a class="btn" href="https://blog.likun.fun">博客</a>
-        <!-- <div class="dropdown">
-          <button class="btn drop-btn">
-            工具
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item btn" href="./book">书籍</a>
-          </div>
-        </div> -->
-        <a class="btn" href="./book">书籍</a>
-        <a class="btn" href="./movie">电影</a>
+      <!--天气插件，基于www.tianqiapi.com 天气接口制作-->
+    </div>
+    <div id="content">
+      <div class="con">
+        <div class="shlogo"></div>
+        <div class="sou">
+          <form
+            action="https://www.google.com/search?hl=zh"
+            method="get"
+            target="_self"
+            autocomplete="off"
+          >
+            <input
+              class="wd"
+              type="text"
+              placeholder="请输入搜索内容"
+              name="q"
+              x-webkit-speech
+              lang="zh-CN"
+            />
+            <button>
+              <i
+                data-s="google"
+                target="_blank"
+                style="background-image: url(icon/g.svg);margin-right: 10px;"
+              ></i>
+              <i
+                data-s="baidu"
+                target="_blank"
+                style="background-image: url(icon/baidu.svg);"
+              ></i>
+            </button>
+          </form>
+        </div>
+        <div class="my-area">
+          <a class="my-area-i" href="https://blog.likun.fun" target="_blank">
+            <i style="background-image: url(icon/lk.png);"></i>
+            <div>Blog</div>
+          </a>
+
+          <a class="my-area-i" href="https://blog.likun.fun" target="_blank">
+            <i style="background-image: url(icon/yapi.png);"></i>
+            <div>Yapi</div>
+          </a>
+        </div>
+      </div>
+      <div class="foot">
+        © 2016-2019 by <a href="https://yyv.me/">歪歪喂</a> . All rights
+        reserved.
       </div>
     </div>
-    <div class="bottom">
-      <div class="link">
-        <a href="https://www.jianshu.com/u/dbebfffb18ba" style="color:#ea6f5a"
-          >简书</a
-        >
-        <a href="https://github.com/gitHber" style="color:#2d8eef">GitHub</a>
-        <a href="https://mock.likun.fun/" style="color:#1bb247">Yapi</a>
-      </div>
-      <div>@月肃生&个人主页</div>
-    </div>
-    <script src="./dot-line.js"></script>
     <script>
       if (navigator.serviceWorker) {
         navigator.serviceWorker
@@ -58,5 +181,12 @@
           });
       }
     </script>
+    <!--
+作者:D.Young
+主页：https://yyv.me/
+github：https://github.com/5iux/sou
+日期：2019-07-26
+版权所有，请勿删除
+-->
   </body>
 </html>

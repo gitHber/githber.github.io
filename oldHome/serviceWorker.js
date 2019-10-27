@@ -4,10 +4,11 @@ var cacheList = [
   "index.html",
   "index.js",
   "index.css",
+  "dot-line.js",
   "favicon.ico",
-  "font.css"
-  // "/icon/*",
-  // "/weather/*"
+  "/book/index.html",
+  "/book/index.js",
+  "/book/index.css"
 ];
 // 安装
 self.addEventListener("install", e => {
@@ -22,7 +23,7 @@ self.addEventListener("install", e => {
 });
 // 处理动态缓存
 self.addEventListener("fetch", e => {
-  let { request } = e;
+  const { request } = e;
   e.respondWith(
     caches.match(request).then(response => {
       if (response) {

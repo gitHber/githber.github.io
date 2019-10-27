@@ -1,0 +1,173 @@
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 12px !important;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+#paint{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+#container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: lighter;
+  width: 6rem;
+  height: 6rem;
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  outline: none;
+  transition: width 2s;
+  background: transparent;
+  color: #fff;
+  background: rgba(0,0,0,.3);
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px;
+}
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.dropdown{
+  position: relative;
+}
+.open > .dropdown-menu {
+  display: block;
+  animation: fadeIn 1s;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+}
+.dropdown-item {
+  margin-top: 10px;
+}
+
+.text {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  font-weight: lighter;
+  margin: 0 4rem 0 0;
+}
+
+.text1 {
+  display: block;
+  font-size: 4rem;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.text2 {
+  display: block;
+  font-size: 4rem;
+  position: absolute;
+  left: 4rem;
+  top: 2.5rem;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-life {
+  font-size: 1.4rem;
+  vertical-align: 1.6rem;
+  padding-left: 10px;
+}
+
+.text-slug {
+  font-size: 1.4rem;
+  margin-left: 3px;
+}
+
+.text3 {
+  position: relative;
+  top: 3rem;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.bottom {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  bottom: 0px;
+  background: rgba(0,0,0,.6);
+  padding: 15px 0 5px;
+}
+.bottom .link{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.bottom .link a:hover{
+  text-shadow: 0 0 3px;
+}
