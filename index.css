@@ -194,8 +194,13 @@ a {
   text-align: center;
   width: 100%;
   color: #999;
-  height: 20px;
   line-height: 20px;
+  font-size: 13px;
+}
+
+.foot a {
+  color: #179bb2;
+  display: block;
   font-size: 12px;
 }
 

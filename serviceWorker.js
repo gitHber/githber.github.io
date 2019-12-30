@@ -1,11 +1,11 @@
-var cacheStorageKey = "lk190812";
+var cacheStorageKey = "lk20191230";
 var cacheList = [
   "/",
   "index.html",
   "index.js",
   "index.css",
   "favicon.ico",
-  "font.css"
+  "font.css",
   // "/icon/*",
   // "/weather/*"
 ];
@@ -25,6 +25,9 @@ self.addEventListener("fetch", e => {
   let { request } = e;
   e.respondWith(
     caches.match(request).then(response => {
+      if (request.url === "http://127.0.0.1:8080/") {
+        console.log(caches, request, response);
+      }
       if (response) {
         return response;
       }
