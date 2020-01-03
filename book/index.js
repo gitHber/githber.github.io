@@ -44,6 +44,11 @@ const BOOKS = [
     img: "./9.png",
     name: "CSS揭秘"
   },
+  {
+    pdf: "./10.pdf",
+    img: "./10.png",
+    name: "深入浅出RXjs"
+  },
 ];
 const wrap = document.getElementById("wrap");
 // 渲染页面
